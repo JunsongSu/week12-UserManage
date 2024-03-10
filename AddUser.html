@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+    <div class="card"><br>
+        <div class="card-body">
+            <h2>New User</h2>
+            <div class="row">
+                <div class="col-sm">
+                <label for="new-user-first-name">First Name</label>
+                <input type="text" id="new-user-first-name" class="form-control">
+                </div>
+
+                <div class="col-sm">
+                <label for="new-user-last-name">Last Name</label>
+                <input type="text" id="new-user-last-name" class="form-control">
+                </div>
+            </div>
+        
+
+            <label for="new-user-name">Email</label>
+            <input type="email" id="new-user-email" class="form-control" placeholder="example@gamil.com"/>
+        
+            <label for="new-user-name">Occupation</label>
+            <input type="text" id="new-user-job" class="form-control"/>
+
+            <label for="new-user-name">Phone Number</label>
+            <input type="text" id="new-user-phone-number" class="form-control"/>
+            <button id="create-new-user" class="btn btn-primary form-control">Create</button>
+        </div>
+    </div><br>
+
+    <div id="app">
+
+        <table id="list" class=" table table-striped">
+            <h2>User Information</h2>
+            <thead>
+                <tr>
+                    <th id="list-firstName">First Name</th>
+                    <th id="list-lastName">Last Name</th>
+                    <th id="list-email">Email Address</th>
+                    <th id="list-job">Occupation</th>
+                    <th id="list-phoneNumber">Phone Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="list-body"></tbody>
+        </table>
+    </div>
+
+
+   <script src="node_modules/jquery/dist/jquery.js"></script> 
+   <script src="script.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
